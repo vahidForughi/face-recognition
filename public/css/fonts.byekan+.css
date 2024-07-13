@@ -1,0 +1,21 @@
+/* BYekan+-normal */
+@font-face {
+  font-family: 'B Yekan+';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../fonts/Yekan+/BYekan+.ttf') format('truetype');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* BYekan+-Bold */
+@font-face {
+    font-family: "B Yekan+";
+    font-style: bold;
+    src: url("../fonts/Yekan+/BYekan+Bold.woff2")format("woff2");
+    src: url("../fonts/Yekan+/BYekan+Bold.woff")format("woff");
+    /*src: url("https://db.onlinewebfonts.com/t/3e617a240c3e2b0bfff0147e9696208c.eot?#iefix")format("embedded-opentype"),*/
+    /*url("https://db.onlinewebfonts.com/t/3e617a240c3e2b0bfff0147e9696208c.woff2")format("woff2"),*/
+    /*url("https://db.onlinewebfonts.com/t/3e617a240c3e2b0bfff0147e9696208c.woff")format("woff"),*/
+    /*url("https://db.onlinewebfonts.com/t/3e617a240c3e2b0bfff0147e9696208c.ttf")format("truetype"),*/
+    /*url("https://db.onlinewebfonts.com/t/3e617a240c3e2b0bfff0147e9696208c.svg#B Yekan+ Bold")format("svg");*/
+}

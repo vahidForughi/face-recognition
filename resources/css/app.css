@@ -1,0 +1,77 @@
+@import 'fonts.css';
+/*@tailwind base;*/
+/*@tailwind components;*/
+/*@tailwind utilities;*/
+/*@tailwind typography;*/
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+/*@import "tailwindcss/typography";*/
+
+[x-cloak] {
+    display: none;
+}
+
+.dir-rtl {
+    direction: rtl;
+}
+.dir-ltr {
+    direction: ltr;
+}
+
+.w-100 {
+    width: 100%;
+}
+.h-100 {
+    height: 100%;
+}
+
+.position-absolute {
+    position: absolute;
+}
+.position-relative {
+    position: relative;
+}
+.position-fixed {
+    position: fixed;
+}
+
+.center{
+    display:table!important;
+    height:100%;width:100%
+}
+
+.center .center-inner{
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center
+}
+
+
+.img-background {
+    position: relative;
+    width: 100%;
+    height: 55px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.img-background .img-background-content, .img-background img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.img-background input.img-background-content, .img-background textarea.img-background-content, .img-background select.img-background-content {
+    color: #57e7ab !important;
+    height: 80%;
+    background: transparent;
+    border: none;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 23px;
+    cursor: pointer;
+}
+.img-background label{
+    cursor: pointer;
+}
