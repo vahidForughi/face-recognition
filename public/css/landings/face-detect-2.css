@@ -1,7 +1,139 @@
-html,body{
+html, body {
     user-select: none;
     background-color: #1f1f1f;
-    background-image: url("../../assets/face-detect-2/background-2.png"), url("../../assets/face-detect-2/background.png");
-    background-size: cover, 100%;
-    background-repeat: no-repeat, no-repeat;
 }
+
+.section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1 {
+    background-image: url('../../assets/face-detect-2/section1.png');
+}
+
+.section-2 {
+    background-image: url('../../assets/face-detect-2/section2.png');
+}
+
+.section-3 {
+    background-image: url('../../assets/face-detect-2/section3.png');
+}
+
+.section-4 {
+    background-image: url('../../assets/face-detect-2/section4.png');
+}
+
+
+.login-container {
+    position: absolute;
+    top: 24px;
+    right: 0;
+    background-color: #7c41a8;
+    border-radius: 50px 0 0 50px;
+
+}
+
+.social-media-container {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: #7c41a8;
+    max-width: 50px;
+    border-radius: 20px 0 0 20px;
+}
+
+.progress-image {
+    max-width: 250px;
+}
+
+.loading-image {
+    max-width: 100px;
+}
+
+.detect-beauty {
+    font-size: 50px;
+    font-weight: 400;
+    color: #e8c0ff;
+}
+
+.send-picture-text {
+    background-color: #b496c5;
+    opacity: 0.7;
+    font-size: 18px;
+}
+
+.gallery-container {
+    background-color: #b496c5;
+    opacity: 0.7;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.gallery-picture-logo {
+    height: 50px;
+}
+
+.select-picture{
+    font-size: 48px;
+    padding: 8px;
+    background-color: rgba(0 ,0 ,0 , 0.3);
+    color: white;
+    border-radius: 16px;
+}
+
+.upload-image{
+    width: 250px;
+    border-radius: 16px;
+}
+
+.go-away-button{
+    background-color: transparent;
+    padding: 0;
+    border-radius: 16px;
+    box-shadow: none;
+    border: none;
+}
+
+.custom-file {
+    background: transparent;
+    width: 100%;
+    padding: 1.5px;
+}
+
+.custom-file input {
+    display: none;
+}
+
+.social-icon{
+    width: 50px;
+}
+
+.social-text{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .detect-beauty{
+        font-size: 24px;
+    }
+    .send-picture-text{
+        font-size: 12px;
+    }
+    .select-picture{
+        font-size: 24px;
+    }
+}
+
