@@ -235,34 +235,52 @@
                 </div>
             </div>
 
-            <div class="d-flex flex-column mt-5 gap-4">
-                <div class="select-picture text-center">یک عکس انتخاب کنید</div>
-                <div class="custom-file">
-                    <input id="face-detect-input" type="file" class="custom-file-input"
-                           accept="image/png, image/jpeg, image/jpg">
-                    <label
-                        class=" d-flex flex-column flex-sm-column flex-md-row flex-lg-row align-items-center justify-content-center gap-3"
-                        for="face-detect-input">
-                        <img src="{{ URL::asset('assets/face-detect-2/upload-image.png') }}" alt=""
-                             class="upload-image">
-                        <button id="go-away"
-                                class="go-away-button">
-                            <img src="{{ URL::asset('assets/face-detect-2/click-here.png') }}" alt=""
+            <div id="DetectFace" class="d-flex flex-column mt-5 gap-4">
+                <form id="face-detect-form">
+                    <div class="select-picture text-center">یک عکس انتخاب کنید</div>
+                    <div class="custom-file">
+                        <input id="face-detect-input" type="file" class="custom-file-input"
+                               accept="image/png, image/jpeg, image/jpg">
+                        <label
+                            class=" d-flex flex-column flex-sm-column flex-md-row flex-lg-row align-items-center justify-content-center gap-3"
+                            for="face-detect-input">
+                            <img src="{{ URL::asset('assets/face-detect-2/upload-image.png') }}" alt=""
                                  class="upload-image">
-                        </button>
-                    </label>
-                </div>
+                            <button id="go-away"
+                                    class="go-away-button">
+                                <img src="{{ URL::asset('assets/face-detect-2/click-here.png') }}" alt=""
+                                     class="upload-image">
+                            </button>
+                        </label>
+                    </div>
+                </form>
+                <div class="row justify-content-center min-h-300">
+                    <div class="col-sm-12">
+                        <div id="face-detect-box" class="card bg-transparent border-0 position-relative">
+                            <div id="face-detect-alert">
 
+                            </div>
+                            <div class="">
+                                <img id="face-detect-image" class="card-img-top position-relative d-none" src="#" alt="your image" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div id="face-detect-result" class="row justify-content-center">
+
+                        </div>
+                    </div>
+                </div>
                 <div class="d-flex flex-column flex-sm-column flex-md-row flex-lg-row mt-5 justify-content-center align-items-center gap-3">
 
                     <a href="tel:+989333667816" class="d-flex flex-row align-items-center text-decoration-none justify-content-center" >
                         <img src="{{ URL::asset('assets/face-detect-2/phone-golden.png') }}" alt="" class="social-icon">
                         <div class="mx-3 social-text">۰۹۳۳۳۶۶۷۸۱۶</div>
-                    </div>
+                    </a>
                     <a href="https://instagram.com/dr.shirinbehjati" class="d-flex flex-row align-items-center justify-content-center text-decoration-none">
                         <img src="{{ URL::asset('assets/face-detect-2/instagram-golden.png') }}" alt="" class="social-icon">
                         <div class="mx-3 social-text">dr.shirinbehjati</div>
-                    </div>
+                    </a>
                 </div>
             </div>
 
@@ -291,6 +309,21 @@
     <footer>
         <div class="text-center bg-transparent p-4 text-white">تمام حقوق مادی و معنوی برای مجموعه پاسو مخفوظ است</div>
     </footer>
+
+    <section>
+
+        <div id="cropping-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body px-0 cropping-box">
+                        <img id="cropping-image">
+                        <button id="crop" class="btn btn-primary upload-face-btn w-100">انتخاب</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
 
 </main>
 
