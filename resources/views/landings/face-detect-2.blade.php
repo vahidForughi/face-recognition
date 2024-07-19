@@ -217,17 +217,33 @@
             </div>
         </div>
     </div>
-    <div class="section section-4">
-        <div class="d-flex flex-column align-items-center justify-content-center w-100">
+    <div class="section-4">
+        <div class="d-flex flex-column align-items-center justify-content-center w-100 gap-5">
             <div
                 class="d-flex flex-column flex-sm-column flex-lg-row align-items-center justify-content-around gap-5 w-50">
-                <div class="d-flex flex-column gap-3 ">
+                <div class="d-flex flex-column gap-3 col-12 col-md-6 col-lg-6">
+                    <video controls autoplay muted loop class="w-100">
+                        <source src="http://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
+                    </video>
+                    <div class="gallery-container d-flex flex-row justify-content-center">
+                        <img src="{{ URL::asset('assets/face-detect-2/video.png') }}" alt="progress"
+                             style="max-width: 150px">
+                        <img src="{{ URL::asset('assets/face-detect-2/video-logo.png') }}" alt="progress"
+                             class="gallery-picture-logo">
+                    </div>
+                </div>
+                <div class="d-flex flex-column gap-3 col-12 col-md-6 col-lg-6">
                     <div id="pictureCarouselControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img class="d-block w-100 rounded-2"
                                      src="https://photographylife.com/wp-content/uploads/2023/05/Nikon-Z8-Official-Samples-00021.jpg"
                                      alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 rounded-2"
+                                     src="https://photographylife.com/wp-content/uploads/2023/05/Nikon-Z8-Official-Samples-00021.jpg"
+                                     alt="Second slide">
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#pictureCarouselControls" role="button"
@@ -243,31 +259,6 @@
                         <img src="{{ URL::asset('assets/face-detect-2/picture-gallery.png') }}" alt="progress"
                              style="max-width: 150px">
                         <img src="{{ URL::asset('assets/face-detect-2/picture-gallery-logo.png') }}" alt="progress"
-                             class="gallery-picture-logo">
-                    </div>
-                </div>
-                <div class="d-flex flex-column gap-3 ">
-                    <div id="videoCarouselControls" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100 rounded-2"
-                                     src="https://photographylife.com/wp-content/uploads/2023/05/Nikon-Z8-Official-Samples-00021.jpg"
-                                     alt="First slide">
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#videoCarouselControls" role="button"
-                           data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        </a>
-                        <a class="carousel-control-next" href="#videoCarouselControls" role="button"
-                           data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        </a>
-                    </div>
-                    <div class="gallery-container d-flex flex-row justify-content-center">
-                        <img src="{{ URL::asset('assets/face-detect-2/video.png') }}" alt="progress"
-                             style="max-width: 150px">
-                        <img src="{{ URL::asset('assets/face-detect-2/video-logo.png') }}" alt="progress"
                              class="gallery-picture-logo">
                     </div>
                 </div>
@@ -296,7 +287,6 @@
                     <div class="col-sm-12">
                         <div id="face-detect-box" class="card bg-transparent border-0 position-relative">
                             <div id="face-detect-alert">
-
                             </div>
                             <div class="">
                                 <img id="face-detect-image" class="h-25 mx-auto position-relative d-none" src="#"
@@ -314,7 +304,7 @@
             </div>
         </div>
     </div>
-    <div class="section section-5">
+    <div class="section section-5 d-flex flex-column gap-5">
         <div
             class="d-flex flex-column flex-sm-column flex-md-row flex-lg-row mt-5 justify-content-center align-items-center gap-3">
             <a href="tel:+989333667816"
@@ -334,11 +324,11 @@
                      class="social-icon">
                 <div class="mx-3 social-text">Telegram Channel</div>
             </a>
-            <div class="text-center bg-transparent p-4 text-white">تمام حقوق مادی و معنوی برای مجموعه پاسو مخفوظ
-                است
-            </div>
-        </div>
 
+        </div>
+        <div class="text-center bg-transparent p-4 text-white">تمام حقوق مادی و معنوی برای مجموعه پاسو مخفوظ
+            است
+        </div>
     </div>
     <section>
         <div id="cropping-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
@@ -367,6 +357,10 @@
 <script src="{{ URL::asset('js/cropper.min.js') }}"></script>
 <!-- Core theme JS-->
 <script src="{{ URL::asset('js/landings/face-detect-1.js?i=2') }}"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
 </html>

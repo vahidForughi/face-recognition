@@ -30,6 +30,8 @@ html, body {
 
 .section-4 {
     background-image: url('../../assets/face-detect-2/section4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .section-5 {
