@@ -221,17 +221,55 @@
         <div class="d-flex flex-column align-items-center justify-content-center w-100">
             <div
                 class="d-flex flex-column flex-sm-column flex-lg-row align-items-center justify-content-around gap-5 w-50">
-                <div class="gallery-container d-flex flex-row justify-content-center align-items-center">
-                    <img src="{{ URL::asset('assets/face-detect-2/picture-gallery.png') }}" alt="progress"
-                         style="max-width: 150px">
-                    <img src="{{ URL::asset('assets/face-detect-2/picture-gallery-logo.png') }}" alt="progress"
-                         class="gallery-picture-logo">
+                <div class="d-flex flex-column gap-3 ">
+                    <div id="pictureCarouselControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 rounded-2"
+                                     src="https://photographylife.com/wp-content/uploads/2023/05/Nikon-Z8-Official-Samples-00021.jpg"
+                                     alt="First slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#pictureCarouselControls" role="button"
+                           data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#pictureCarouselControls" role="button"
+                           data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <div class="gallery-container d-flex flex-row justify-content-center align-items-center">
+                        <img src="{{ URL::asset('assets/face-detect-2/picture-gallery.png') }}" alt="progress"
+                             style="max-width: 150px">
+                        <img src="{{ URL::asset('assets/face-detect-2/picture-gallery-logo.png') }}" alt="progress"
+                             class="gallery-picture-logo">
+                    </div>
                 </div>
-                <div class="gallery-container d-flex flex-row justify-content-center">
-                    <img src="{{ URL::asset('assets/face-detect-2/video.png') }}" alt="progress"
-                         style="max-width: 150px">
-                    <img src="{{ URL::asset('assets/face-detect-2/video-logo.png') }}" alt="progress"
-                         class="gallery-picture-logo">
+                <div class="d-flex flex-column gap-3 ">
+                    <div id="videoCarouselControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 rounded-2"
+                                     src="https://photographylife.com/wp-content/uploads/2023/05/Nikon-Z8-Official-Samples-00021.jpg"
+                                     alt="First slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#videoCarouselControls" role="button"
+                           data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#videoCarouselControls" role="button"
+                           data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <div class="gallery-container d-flex flex-row justify-content-center">
+                        <img src="{{ URL::asset('assets/face-detect-2/video.png') }}" alt="progress"
+                             style="max-width: 150px">
+                        <img src="{{ URL::asset('assets/face-detect-2/video-logo.png') }}" alt="progress"
+                             class="gallery-picture-logo">
+                    </div>
                 </div>
             </div>
 
@@ -296,10 +334,11 @@
                      class="social-icon">
                 <div class="mx-3 social-text">Telegram Channel</div>
             </a>
+            <div class="text-center bg-transparent p-4 text-white">تمام حقوق مادی و معنوی برای مجموعه پاسو مخفوظ
+                است
+            </div>
         </div>
-        <div class="text-center bg-transparent p-4 text-white">تمام حقوق مادی و معنوی برای مجموعه پاسو مخفوظ
-            است
-        </div>
+
     </div>
     <section>
         <div id="cropping-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
