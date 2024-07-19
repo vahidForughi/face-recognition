@@ -1,4 +1,7 @@
+@import "../../fonts/yekanbakh/stylesheet.css";
+
 html, body {
+    font-family: "Yekan Bakh" , serif;
     user-select: none;
     background-color: #1f1f1f;
 }
@@ -27,6 +30,10 @@ html, body {
 
 .section-4 {
     background-image: url('../../assets/face-detect-2/section4.png');
+}
+
+.section-5 {
+    background-image: url('../../assets/face-detect-2/section5.png');
 }
 
 

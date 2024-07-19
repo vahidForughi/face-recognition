@@ -254,14 +254,15 @@
                         </label>
                     </div>
                 </form>
-                <div class="row justify-content-center min-h-300">
+                <div class="row justify-content-center">
                     <div class="col-sm-12">
                         <div id="face-detect-box" class="card bg-transparent border-0 position-relative">
                             <div id="face-detect-alert">
 
                             </div>
                             <div class="">
-                                <img id="face-detect-image" class="card-img-top position-relative d-none" src="#" alt="your image" />
+                                <img id="face-detect-image" class="h-25 mx-auto position-relative d-none" src="#"
+                                     alt="your image"/>
                             </div>
                         </div>
                     </div>
@@ -271,48 +272,38 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex flex-column flex-sm-column flex-md-row flex-lg-row mt-5 justify-content-center align-items-center gap-3">
 
-                    <a href="tel:+989333667816" class="d-flex flex-row align-items-center text-decoration-none justify-content-center" >
-                        <img src="{{ URL::asset('assets/face-detect-2/phone-golden.png') }}" alt="" class="social-icon">
-                        <div class="mx-3 social-text">۰۹۳۳۳۶۶۷۸۱۶</div>
-                    </a>
-                    <a href="https://instagram.com/dr.shirinbehjati" class="d-flex flex-row align-items-center justify-content-center text-decoration-none">
-                        <img src="{{ URL::asset('assets/face-detect-2/instagram-golden.png') }}" alt="" class="social-icon">
-                        <div class="mx-3 social-text">dr.shirinbehjati</div>
-                    </a>
-                </div>
             </div>
-
-
-            <!--            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">-->
-            <!--                <div class="carousel-inner">-->
-            <!--                    <div class="carousel-item active">-->
-            <!--                        <img class="d-block w-100" src="{{ URL::asset('assets/face-detect-2/video.png') }}"-->
-            <!--                             alt="First slide">-->
-            <!--                    </div>-->
-            <!--                    <div class="carousel-item">-->
-            <!--                        <img class="d-block w-100" src="..." alt="Second slide">-->
-            <!--                    </div>-->
-            <!--                    <div class="carousel-item">-->
-            <!--                        <img class="d-block w-100" src="..." alt="Third slide">-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--            </div>-->
-
-
-
         </div>
-
-
     </div>
-    <footer>
-        <div class="text-center bg-transparent p-4 text-white">تمام حقوق مادی و معنوی برای مجموعه پاسو مخفوظ است</div>
-    </footer>
-
+    <div class="section section-5">
+        <div
+            class="d-flex flex-column flex-sm-column flex-md-row flex-lg-row mt-5 justify-content-center align-items-center gap-3">
+            <a href="tel:+989333667816"
+               class="d-flex flex-row align-items-center text-decoration-none justify-content-center">
+                <img src="{{ URL::asset('assets/face-detect-2/phone-golden.png') }}" alt="" class="social-icon">
+                <div class="mx-3 social-text">۰۹۳۳۳۶۶۷۸۱۶</div>
+            </a>
+            <a href="https://instagram.com/dr.shirinbehjati"
+               class="d-flex flex-row align-items-center justify-content-center text-decoration-none">
+                <img src="{{ URL::asset('assets/face-detect-2/instagram-golden.png') }}" alt=""
+                     class="social-icon">
+                <div class="mx-3 social-text">dr.shirinbehjati</div>
+            </a>
+            <a href="https://t.me/dr.shirinbehjati"
+               class="d-flex flex-row align-items-center justify-content-center text-decoration-none">
+                <img src="{{ URL::asset('assets/face-detect-2/telegram-golden.png') }}" alt=""
+                     class="social-icon">
+                <div class="mx-3 social-text">Telegram Channel</div>
+            </a>
+        </div>
+        <div class="text-center bg-transparent p-4 text-white">تمام حقوق مادی و معنوی برای مجموعه پاسو مخفوظ
+            است
+        </div>
+    </div>
     <section>
-
-        <div id="cropping-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+        <div id="cropping-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
+             aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-body px-0 cropping-box">
@@ -322,9 +313,7 @@
                 </div>
             </div>
         </div>
-
     </section>
-
 </main>
 
 <!-- JQuery core JS-->
