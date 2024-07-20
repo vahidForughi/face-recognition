@@ -317,8 +317,8 @@ $(document).ready(function(){
                     '                                        <ul class="list-group px-0 border-none">\n' +
                     '                                            <li class="list-group-item bg-transparent text-white border-0"><span class="float-end">سن: </span><span class="float-start">'+ faces[i].attributes.age.value +'</span></li>\n' +
                     '                                            <li class="list-group-item bg-transparent text-white border-0"><span class="float-end">جنسیت: </span><span class="float-start">'+ ((faces[i].attributes.gender.value === "Male") ? "مرد" : "زن") +'</span></li>\n' +
-                    '                                            <li class="list-group-item bg-transparent text-white border-0"><span class="float-end">امتیاز زیبایی از دید آقایان: </span><span class="float-start">'+ (faces[i].attributes.beauty.male_score).toFixed(0) +'%</span></li>\n' +
-                    '                                            <li class="list-group-item bg-transparent text-white border-0"><span class="float-end">امتیاز زیبایی از دید خانم‌ها: </span><span class="float-start">'+ (faces[i].attributes.beauty.female_score).toFixed(0) +'%</span></li>\n' +
+                    '                                            <li class="list-group-item bg-transparent text-white border-0"><span class="float-end">امتیاز زیبایی و بادی از دید آقایان: </span><span class="float-start">'+ (faces[i].attributes.beauty.male_score).toFixed(0) +'%</span></li>\n' +
+                    '                                            <li class="list-group-item bg-transparent text-white border-0"><span class="float-end">امتیاز زیبایی و بادی از دید خانم‌ها: </span><span class="float-start">'+ (faces[i].attributes.beauty.female_score).toFixed(0) +'%</span></li>\n' +
                     '                                            <li class="list-group-item bg-transparent text-white border-0 final-rate"><span class="float-end">امتیاز نهایی: </span><span class="float-start ring">'+ ((faces[i].attributes.beauty.female_score + faces[i].attributes.beauty.male_score)/2).toFixed(0) +'%</span></li>\n' +
                     // '                                            <li class="list-group-item">Smile: '+ faces[i].attributes.smile.value +'</li>\n' +
                     '                                        </ul>\n' +
@@ -382,7 +382,7 @@ $(document).ready(function(){
             data.append('contact['+field.name+']', field.value)
         })
         data.append('contact[sender_image]', imageInputFile ?? '')
-        data.append('contact[landing_id]', 1)
+        data.append('contact[landing_id]', 2)
         data.append('contact[subject]', 'Lead')
 
         $.ajax({

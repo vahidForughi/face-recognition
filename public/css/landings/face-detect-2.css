@@ -68,22 +68,47 @@ html, body {
 }
 
 .detect-beauty {
-    font-size: 50px;
-    font-weight: 400;
-    color: #e8c0ff;
+    font-size: 33px !important;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 4px 8px;
+    border-radius: 8px;
+    background: rgba(180, 150, 197, 0.2);
+    color: #b496c5;
+    box-shadow: 0px 0px 15px 0px #b496c5;
+    text-shadow: 1px 3px 1px black;
+}
+.detect-beauty:hover {
+    color: #FFD700;
 }
 
 .send-picture-text {
     background-color: #b496c5;
-    opacity: 0.7;
-    font-size: 18px;
+    font-size: 30px;
+}
+
+.gallery-title {
+    color: black;
+    background-color: #b496c5;
+    padding: 2px 15px 5px 15px;
+    border-radius: 6px;
+    border: 2px solid #b496c5;
+    box-shadow: 1px 1px 2px #b496c5 inset;
+    position: absolute;
+    top: -25px;
+    right: -2px;
+    z-index: 0;
+    font-size: 15px
 }
 
 .gallery-container {
-    background-color: #b496c5;
-    opacity: 0.7;
-    padding: 8px;
-    border-radius: 10px;
+    background-color: transparent;
+    padding: 0px;
+    border-radius: 8px;
+    border: 3px solid #b496c5;
+    box-shadow: 1px 1px 2px #b496c5 inset;
+    z-index: 10;
+    min-height: 200px;
 }
 
 .gallery-picture-logo {
@@ -92,10 +117,10 @@ html, body {
 
 .select-picture{
     font-size: 48px;
-    padding: 8px;
-    background-color: rgb(74,65,78,0.7);
+    padding: 6px 10px;
+    background-color: rgb(74,65,78,0.5);
     color: white;
-    border-radius: 16px;
+    border-radius: 8px;
 }
 
 
@@ -118,6 +143,20 @@ html, body {
     text-shadow: 1px 2px 10px #3a3a3a;
 }
 
+.custom-field {
+    background: url(../../assets/face-detect-2/field-bg-min.png) center no-repeat transparent;
+    background-size: cover;
+    border: none;
+    color: black !important;
+    text-decoration: none;
+    display: block;
+    font-family: "B Yekan+";
+}
+.custom-field:focus {
+    background: url(../../assets/face-detect-2/field-bg-min.png) center no-repeat transparent;
+    background-size: cover;
+}
+
 .contact-custom-btn {
     height: 40px;
     width: 115px;
@@ -130,12 +169,13 @@ html, body {
 
 .upload-image{
     width: 100%;
-    padding: 8px 5px;
+    padding: 2px 5px;
     border-radius: 10px;
-    box-shadow: 0 26px 68px rgba(0,0,0,0.26);
+    box-shadow: 0 26px 68px rgba(0, 0, 0, 0.26);
     background-color: #e8bfff;
     color: black;
     font-weight: 300;
+    font-size: 15px;
 }
 
 .go-away-button{
@@ -175,6 +215,7 @@ html, body {
     background-image: url("../../assets/face-detect-2/bg-min.png");
     background-size: contain;
     margin-top: -60px;
+    padding-top: 80px;
 }
 
 
@@ -248,8 +289,7 @@ html, body {
 }
 
 .contact-form input {
-    background: #747474;
-    color: var(--bs-body-color);
+    color: black;
     border-radius: 18px;
     border: none;
     height: 45px;
@@ -257,7 +297,7 @@ html, body {
 }
 
 .contact-form input::placeholder {
-    color: var(--bs-body-color);
+    color: white;
 }
 
 .contact-form button {
@@ -265,8 +305,7 @@ html, body {
 }
 
 .lead-text {
-    /*font-size: 40px;*/
-    line-height: 58px;
+    font-size: 26px;
     color: white;
     font-weight: bold;
 }
@@ -288,7 +327,7 @@ html, body {
         font-size: 24px;
     }
     .send-picture-text{
-        font-size: 12px;
+        font-size: 24px;
     }
     .select-picture{
         font-size: 24px;
@@ -342,6 +381,6 @@ html, body {
 
 @media only screen and (min-width: 1200px) {
     .lead-text {
-        line-height: 70px;
+        line-height: 40px;
     }
 }
